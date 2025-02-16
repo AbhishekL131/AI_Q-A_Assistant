@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Q&A Assistant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="gradient-text">AI Q&A Assistant</h1>
+            <p class="subtitle">Ask anything, get instant AI-powered answers!</p>
+        </header>
+        <main>
+            <section class="input-section">
+                <div class="input-group">
+                    <label for="text">Enter Text or URL:</label>
+                    <textarea id="text" rows="4" placeholder="Type your content or paste a URL..."></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="question">Your Question:</label>
+                    <input type="text" id="question" placeholder="What's on your mind?">
+                </div>
+                <button id="askButton" class="primary-button">
+                    <span class="button-text">Ask AI</span>
+                    <span class="button-icon">🚀</span>
+                </button>
+            </section>
+            <section class="output-section">
+                <h2>AI Response</h2>
+                <div id="answer" class="answer-box">
+                    Your AI-generated response will appear here...
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
